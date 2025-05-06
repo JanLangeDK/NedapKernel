@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Dev\\NedapKernel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{570E01C5-3641-489B-9D33-E563E4758E03}|NedapKernel\\NedapKernel.csproj|c:\\dev\\nedapkernel\\nedapkernel\\plugins\\frauddetectionplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{570E01C5-3641-489B-9D33-E563E4758E03}|NedapKernel\\NedapKernel.csproj|solutionrelative:nedapkernel\\plugins\\frauddetectionplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{570E01C5-3641-489B-9D33-E563E4758E03}|NedapKernel\\NedapKernel.csproj|c:\\dev\\nedapkernel\\nedapkernel\\models\\flaggedeventsresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570E01C5-3641-489B-9D33-E563E4758E03}|NedapKernel\\NedapKernel.csproj|solutionrelative:nedapkernel\\models\\flaggedeventsresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{570E01C5-3641-489B-9D33-E563E4758E03}|NedapKernel\\NedapKernel.csproj|c:\\dev\\nedapkernel\\nedapkernel\\models\\eventloganalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{570E01C5-3641-489B-9D33-E563E4758E03}|NedapKernel\\NedapKernel.csproj|solutionrelative:nedapkernel\\models\\eventloganalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{570E01C5-3641-489B-9D33-E563E4758E03}|NedapKernel\\NedapKernel.csproj|c:\\dev\\nedapkernel\\nedapkernel\\models\\flaggedeventsresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{570E01C5-3641-489B-9D33-E563E4758E03}|NedapKernel\\NedapKernel.csproj|solutionrelative:nedapkernel\\models\\flaggedeventsresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{570E01C5-3641-489B-9D33-E563E4758E03}|NedapKernel\\NedapKernel.csproj|c:\\dev\\nedapkernel\\nedapkernel\\plugins\\frauddetectionplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570E01C5-3641-489B-9D33-E563E4758E03}|NedapKernel\\NedapKernel.csproj|solutionrelative:nedapkernel\\plugins\\frauddetectionplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{570E01C5-3641-489B-9D33-E563E4758E03}|NedapKernel\\NedapKernel.csproj|c:\\dev\\nedapkernel\\nedapkernel\\plugins\\nonusedcardplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -61,7 +61,7 @@
               "RelativeDocumentMoniker": "NedapKernel\\Models\\EventLogAnalyzer.cs",
               "ToolTip": "C:\\Dev\\NedapKernel\\NedapKernel\\Models\\EventLogAnalyzer.cs",
               "RelativeToolTip": "NedapKernel\\Models\\EventLogAnalyzer.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAIAwwFEAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAIAwwFEAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T06:36:40.995Z",
               "EditorCaption": ""
@@ -83,17 +83,17 @@
         },
         {
           "DockedWidth": 287,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "FlaggedEventsResult.cs",
               "DocumentMoniker": "C:\\Dev\\NedapKernel\\NedapKernel\\Models\\FlaggedEventsResult.cs",
               "RelativeDocumentMoniker": "NedapKernel\\Models\\FlaggedEventsResult.cs",
-              "ToolTip": "C:\\Dev\\NedapKernel\\NedapKernel\\Models\\FlaggedEventsResult.cs",
-              "RelativeToolTip": "NedapKernel\\Models\\FlaggedEventsResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAZAAAAAAAAAA==",
+              "ToolTip": "C:\\Dev\\NedapKernel\\NedapKernel\\Models\\FlaggedEventsResult.cs*",
+              "RelativeToolTip": "NedapKernel\\Models\\FlaggedEventsResult.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T12:56:44.698Z",
               "EditorCaption": ""
@@ -126,13 +126,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "FraudDetectionPlugin.cs",
               "DocumentMoniker": "C:\\Dev\\NedapKernel\\NedapKernel\\Plugins\\FraudDetectionPlugin.cs",
               "RelativeDocumentMoniker": "NedapKernel\\Plugins\\FraudDetectionPlugin.cs",
-              "ToolTip": "C:\\Dev\\NedapKernel\\NedapKernel\\Plugins\\FraudDetectionPlugin.cs*",
-              "RelativeToolTip": "NedapKernel\\Plugins\\FraudDetectionPlugin.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACUAAAB2AAAAAAAAAA==",
+              "ToolTip": "C:\\Dev\\NedapKernel\\NedapKernel\\Plugins\\FraudDetectionPlugin.cs",
+              "RelativeToolTip": "NedapKernel\\Plugins\\FraudDetectionPlugin.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T12:52:03.718Z",
               "EditorCaption": ""

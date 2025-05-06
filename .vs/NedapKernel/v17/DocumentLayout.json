@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Dev\\NedapKernel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{570E01C5-3641-489B-9D33-E563E4758E03}|NedapKernel\\NedapKernel.csproj|c:\\dev\\nedapkernel\\nedapkernel\\models\\flaggedeventsresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{570E01C5-3641-489B-9D33-E563E4758E03}|NedapKernel\\NedapKernel.csproj|solutionrelative:nedapkernel\\models\\flaggedeventsresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{570E01C5-3641-489B-9D33-E563E4758E03}|NedapKernel\\NedapKernel.csproj|c:\\dev\\nedapkernel\\nedapkernel\\plugins\\predictivemaintenanceplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570E01C5-3641-489B-9D33-E563E4758E03}|NedapKernel\\NedapKernel.csproj|solutionrelative:nedapkernel\\plugins\\predictivemaintenanceplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{570E01C5-3641-489B-9D33-E563E4758E03}|NedapKernel\\NedapKernel.csproj|c:\\dev\\nedapkernel\\nedapkernel\\models\\eventloganalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{570E01C5-3641-489B-9D33-E563E4758E03}|NedapKernel\\NedapKernel.csproj|c:\\dev\\nedapkernel\\nedapkernel\\plugins\\frauddetectionplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{570E01C5-3641-489B-9D33-E563E4758E03}|NedapKernel\\NedapKernel.csproj|solutionrelative:nedapkernel\\plugins\\frauddetectionplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570E01C5-3641-489B-9D33-E563E4758E03}|NedapKernel\\NedapKernel.csproj|c:\\dev\\nedapkernel\\nedapkernel\\models\\flaggedeventsresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570E01C5-3641-489B-9D33-E563E4758E03}|NedapKernel\\NedapKernel.csproj|solutionrelative:nedapkernel\\models\\flaggedeventsresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{570E01C5-3641-489B-9D33-E563E4758E03}|NedapKernel\\NedapKernel.csproj|c:\\dev\\nedapkernel\\nedapkernel\\plugins\\nonusedcardplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,11 +42,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 287,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "PredictiveMaintenancePlugin.cs",
+              "DocumentMoniker": "C:\\Dev\\NedapKernel\\NedapKernel\\Plugins\\PredictiveMaintenancePlugin.cs",
+              "RelativeDocumentMoniker": "NedapKernel\\Plugins\\PredictiveMaintenancePlugin.cs",
+              "ToolTip": "C:\\Dev\\NedapKernel\\NedapKernel\\Plugins\\PredictiveMaintenancePlugin.cs",
+              "RelativeToolTip": "NedapKernel\\Plugins\\PredictiveMaintenancePlugin.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T13:15:53.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "CardIssueResult.cs",
               "DocumentMoniker": "C:\\Dev\\NedapKernel\\NedapKernel\\Models\\CardIssueResult.cs",
               "RelativeDocumentMoniker": "NedapKernel\\Models\\CardIssueResult.cs",
@@ -61,14 +78,14 @@
               "RelativeDocumentMoniker": "NedapKernel\\Models\\EventLogAnalyzer.cs",
               "ToolTip": "C:\\Dev\\NedapKernel\\NedapKernel\\Models\\EventLogAnalyzer.cs",
               "RelativeToolTip": "NedapKernel\\Models\\EventLogAnalyzer.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAIAwwFEAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAIAwwGEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T06:36:40.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "eventlog.cs",
               "DocumentMoniker": "C:\\Dev\\NedapKernel\\NedapKernel\\Models\\eventlog.cs",
               "RelativeDocumentMoniker": "NedapKernel\\Models\\eventlog.cs",
@@ -83,16 +100,16 @@
         },
         {
           "DockedWidth": 287,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "FlaggedEventsResult.cs",
               "DocumentMoniker": "C:\\Dev\\NedapKernel\\NedapKernel\\Models\\FlaggedEventsResult.cs",
               "RelativeDocumentMoniker": "NedapKernel\\Models\\FlaggedEventsResult.cs",
-              "ToolTip": "C:\\Dev\\NedapKernel\\NedapKernel\\Models\\FlaggedEventsResult.cs*",
-              "RelativeToolTip": "NedapKernel\\Models\\FlaggedEventsResult.cs*",
+              "ToolTip": "C:\\Dev\\NedapKernel\\NedapKernel\\Models\\FlaggedEventsResult.cs",
+              "RelativeToolTip": "NedapKernel\\Models\\FlaggedEventsResult.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T12:56:44.698Z",
@@ -100,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CardIssuePlugin.cs",
               "DocumentMoniker": "C:\\Dev\\NedapKernel\\NedapKernel\\Plugins\\CardIssuePlugin.cs",
               "RelativeDocumentMoniker": "NedapKernel\\Plugins\\CardIssuePlugin.cs",
@@ -113,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "NonUsedCardPlugin.cs",
               "DocumentMoniker": "C:\\Dev\\NedapKernel\\NedapKernel\\Plugins\\NonUsedCardPlugin.cs",
               "RelativeDocumentMoniker": "NedapKernel\\Plugins\\NonUsedCardPlugin.cs",
