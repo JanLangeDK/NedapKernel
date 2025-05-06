@@ -86,3 +86,4 @@ C:\Dev\NedapKernel\NedapKernel\bin\Debug\net8.0\System.IO.Pipelines.dll
 C:\Dev\NedapKernel\NedapKernel\bin\Debug\net8.0\System.Text.Encodings.Web.dll
 C:\Dev\NedapKernel\NedapKernel\bin\Debug\net8.0\System.Text.Json.dll
 C:\Dev\NedapKernel\NedapKernel\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Dev\NedapKernel\NedapKernel\obj\Debug\net8.0\NedapKernel.sourcelink.json

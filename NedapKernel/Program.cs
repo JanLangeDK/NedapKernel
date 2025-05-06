@@ -11,12 +11,34 @@ namespace NedapKernel
     {
         static async Task Main(string[] args)
         {
+
+
             var kernel = Kernel.CreateBuilder()
                 .AddAzureOpenAIChatCompletion(
                     deploymentName: "gpt-4o-mini",
                     endpoint: "https://60087-openai.openai.azure.com",
-                    apiKey: "e78bafddedd441ea9a72e05f458dfc33")
+                    apiKey: "e78bafddedd441ea9a72e05f458dfc33", 
+                    httpClient: new HttpClient
+                    {
+                        Timeout = TimeSpan.FromSeconds(300) // Set timeout to 5 minutes
+                    })
                 .Build();
+
+
+            var cardIssuePlugin = new CardIssuePlugin();
+            var nonUsedCardPlugin = new NonUsedCardPlugin();
+            var fraudDetectionPlugin = new FraudDetectionPlugin(kernel); // Pass Kernel manually
+            var predictiveMaintenancePlugin = new PredictiveMaintenancePlugin();
+
+            var analyzer = new EventLogAnalyzer(
+                kernel,
+                cardIssuePlugin,
+                nonUsedCardPlugin,
+                fraudDetectionPlugin,
+                predictiveMaintenancePlugin);
+
+            var resultJson = await analyzer.AnalyzeLogsAsync();
+            Console.WriteLine(resultJson);
 
             var chatCompletionService = kernel.GetRequiredService<IChatCompletionService>();
 
@@ -28,12 +50,7 @@ namespace NedapKernel
                 FunctionChoiceBehavior = FunctionChoiceBehavior.Auto()
             };
 
-            // Create an instance of the eventlog class to call the non-static method
-            //var eventLogInstance = new eventlog();
-            //List<eventlog> eventlogs = await eventLogInstance.GetEventLogsAsync(
-            //    "Server=AZEDKNedap01;Database=aeosdb;Integrated Security=True;TrustServerCertificate=True;", 10);
-
-            var chatHistory = new ChatHistory($"You are a agent that can answer to questionsToday's date and time is {DateTime.Now:yyyy-MM-dd HH:mm:ss} localtime. localtime it utc + 1");
+            var chatHistory = new ChatHistory($"Today's date and time is {DateTime.Now:yyyy-MM-dd HH:mm:ss}");
             Console.WriteLine("Chat started. Type 'exit' to quit.");
             while (true)
             {

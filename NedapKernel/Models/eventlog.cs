@@ -7,7 +7,7 @@ namespace NedapKernel.Models
     {
         //[Key]
         public DateTime? timestamp { get; set; }
-        public DateTime? servertimestamp { get; set; }
+        public DateTime servertimestamp { get; set; }
         public long? eventtype { get; set; }
         public long? accesspointid { get; set; }
         public long? entranceid { get; set; }
@@ -19,14 +19,30 @@ namespace NedapKernel.Models
         [Key]
         public long objectid { get; set; }
 
-        public async Task<List<eventlog>> GetEventLogsAsync(string connectionString, int days = 30)
+        public async Task<List<eventlog>> GetEventLogsInTimeFrameAsync(string connectionString, DateTime starttime, DateTime endtime)
         {
             using (var context = new AppDbContext(connectionString))
             {
-                var thresholdDate = DateTime.Now.AddDays(-days);
                 return await context.EventLogs
-                    .Where(e => e.timestamp >= thresholdDate)
+                    .Where(e => e.servertimestamp >= starttime && e.servertimestamp <= endtime)
                     .ToListAsync();
+            }
+        }
+
+        public async Task<List<eventlog>> GetEventsPageAsync(string connectionString, int pageNumber, int pageSize)
+        {
+            using (var context = new AppDbContext(connectionString))
+            {
+                int offset = (pageNumber - 1) * pageSize;
+                //return await context.EventLogs.Skip(offset).Take(pageSize).ToListAsync();
+
+                return await context.EventLogs
+                    .Where(e => e.carrierid != null && e.carrierid != 0) // Filter out null or invalid CardId
+                    .OrderBy(e => e.servertimestamp) // Ensure consistent ordering
+                    .Skip(offset)
+                    .Take(pageSize)
+                    .ToListAsync();
+
             }
         }
     }
