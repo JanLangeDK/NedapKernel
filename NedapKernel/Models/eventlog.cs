@@ -29,6 +29,19 @@ namespace NedapKernel.Models
             }
         }
 
+        public async Task<List<eventlog>> GetCarrierEventLogsInTimeFrameAsync(string connectionString, DateTime starttime, DateTime endtime, string carrierId)
+        {
+            using (var context = new AppDbContext(connectionString))
+            {
+                return await context.EventLogs
+                    .Where(e => e.servertimestamp >= starttime && e.servertimestamp <= endtime && carrierId == carrierId)
+                    .ToListAsync();
+            }
+        }
+
+        
+
+
         public async Task<List<eventlog>> GetEventsPageAsync(string connectionString, int pageNumber, int pageSize)
         {
             using (var context = new AppDbContext(connectionString))
@@ -45,5 +58,6 @@ namespace NedapKernel.Models
 
             }
         }
+
     }
 }
