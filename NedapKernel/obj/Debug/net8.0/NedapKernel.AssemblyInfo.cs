@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NedapKernel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0fa5c474fdcac5b22a2ed7b8f474c838cd764219")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87d187c77a2e38598e73aa758d43f2bf87a99113")]
 [assembly: System.Reflection.AssemblyProductAttribute("NedapKernel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NedapKernel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
